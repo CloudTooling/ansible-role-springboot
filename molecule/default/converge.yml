@@ -4,8 +4,8 @@
   become: true
 
   vars:
-    springboot_dist_file: ../../example/files/spring-petclinic.zip
-    springboot_configuration_template: ../../example/files/application.yml.j2
+    springboot_dist_file: example/files/spring-petclinic.zip
+    springboot_configuration_template: example/files/application.yml.j2
 
   pre_tasks:
     - name: Update apt cache
