@@ -23,14 +23,36 @@ Create a *requirements.yml* refering to this role and a *playbook.yml*, e.g.:
 ```
 You also need to provide a `springboot_configuration_template` which will be used as config template.
 
->**NOTE**: The ZIP file 
+Make sure that the does not contain the base directory, e.g. use an `assembly.xml` like this:
+```
+<?xml version="1.0"?>
+<assembly xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.3"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.3 http://maven.apache.org/xsd/assembly-1.1.3.xsd">
+    <id>unix</id>
 
-Within your CI/CD pipeline just run the playbook then, e.g. via GH action: 
+    <formats>
+        <format>zip</format>
+    </formats>
+    <includeBaseDirectory>false</includeBaseDirectory>
+
+    <dependencySets>
+        <dependencySet>
+            <useProjectArtifact>true</useProjectArtifact>
+            <outputDirectory>lib</outputDirectory>
+        </dependencySet>
+    </dependencySets>
+
+...
+</assembly>
+```
+
+Within your CI/CD pipeline just run the playbook then, e.g. via GH action:
 ```
 -   name: Setup key for deployment
     uses: webfactory/ssh-agent@v0.9.0
     with:
-        ssh-private-key: ${{ secrets.SSHKEY_STAGING1 }}
+        ssh-private-key: ${{ secrets.MY_SSH_KEY }}
 
 -   name: Run Ansible playbook
     run: |
