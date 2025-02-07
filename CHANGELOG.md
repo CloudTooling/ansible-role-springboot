@@ -1,3 +1,12 @@
+# [1.2.0](https://github.com/CloudTooling/ansible-role-springboot/compare/v1.1.0...v1.2.0) (2025-02-07)
+
+
+### Features
+
+* Allow Jar to be overridden ([2b03021](https://github.com/CloudTooling/ansible-role-springboot/commit/2b0302161784759d0aa34989eb76dedf4f1089b6))
+
+
+
 ## [1.1.0](https://github.com/CloudTooling/ansible-role-springboot/compare/v1.0.4...v1.1.0) (2025-01-24)
 
 ## [1.0.4](https://github.com/CloudTooling/ansible-role-springboot/compare/v1.0.3...v1.0.4) (2025-01-02)
