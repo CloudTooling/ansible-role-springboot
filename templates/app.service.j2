@@ -4,7 +4,7 @@ After=syslog.target
 
 [Service]
 User={{ springboot_user }}
-ExecStart="{{ springboot_deploy_folder }}/{{ springboot_application_name }}.jar"
+ExecStart="{{ springboot_deploy_folder }}/{{ springboot_application_jar }}"
 Environment=SPRING_CONFIG_LOCATION={{ springboot_deploy_folder }}/application.yml
 SuccessExitStatus=143
 
