@@ -1,3 +1,17 @@
+## [1.2.1](https://github.com/CloudTooling/ansible-role-springboot/compare/v1.2.0...v1.2.1) (2025-02-19)
+
+
+### Bug Fixes
+
+* **Configuration:** Move jar overwrite to defaults ([24fdb55](https://github.com/CloudTooling/ansible-role-springboot/commit/24fdb55e172779c3615f58a85234aad8a693db7c))
+
+
+### Features
+
+* **Logging:** Log application url during wait ([1ae9a8a](https://github.com/CloudTooling/ansible-role-springboot/commit/1ae9a8a1d18496dbb5cc353b6fb3f0ca7aa07dcc))
+
+
+
 # [1.2.0](https://github.com/CloudTooling/ansible-role-springboot/compare/v1.1.0...v1.2.0) (2025-02-07)
 
 
