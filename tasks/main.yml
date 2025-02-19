@@ -8,7 +8,7 @@
 - name: Flush handlers before wait
   meta: flush_handlers
 
-- name: Wait until appication is available
+- name: Wait until appication {{ springboot_application_name }} is available ({{ springboot_application_url }})
   uri:
     url: "{{ springboot_application_url }}/actuator/health"
     return_content: true
