@@ -4,6 +4,9 @@ springboot_dist_file:
 # Mandatory variable : spring boot application name
 springboot_application_name: None
 
+# Optional: Overwrite jar name
+springboot_application_jar: "{{ springboot_application_name }}.jar"
+
 # Optional : you can specify a template file to manage you app properties
 springboot_propertyfile_template: None
 
