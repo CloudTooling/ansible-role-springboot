@@ -1,3 +1,12 @@
+## [1.2.2](https://github.com/CloudTooling/ansible-role-springboot/compare/v1.2.1...v1.2.2) (2025-05-07)
+
+
+### Bug Fixes
+
+* Enforce service restart ([9060664](https://github.com/CloudTooling/ansible-role-springboot/commit/9060664b37a149fbe3dc099d4090280619f21e09))
+
+
+
 ## [1.2.1](https://github.com/CloudTooling/ansible-role-springboot/compare/v1.2.0...v1.2.1) (2025-02-19)
 
 
