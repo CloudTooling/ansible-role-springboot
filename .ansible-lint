@@ -5,3 +5,4 @@ skip_list:
   - empty-lines
   - fqcn-builtins
   - package-latest
+  - 'name[template]' # Jinja templates should only be at the end of ‘name’.

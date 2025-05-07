@@ -16,3 +16,8 @@
     group: "{{ springboot_group }}"
   notify:
     - Restart application
+
+- name: Restart service
+  ansible.builtin.service:
+    name: "{{ springboot_application_name }}"
+    state: restarted
