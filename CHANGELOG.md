@@ -1,3 +1,13 @@
+# [1.3.0](https://github.com/CloudTooling/ansible-role-springboot/compare/v1.2.2...v1.3.0) (2025-09-12)
+
+
+### Features
+
+* **Config:** Adding jar args ([ae83525](https://github.com/CloudTooling/ansible-role-springboot/commit/ae83525e5d181dfd86ff12cdda3de707117db33c))
+* **Config:** Allow adding of further envs ([55f3b48](https://github.com/CloudTooling/ansible-role-springboot/commit/55f3b488a74b9b62918cc010d48bd70104f46d79))
+
+
+
 ## [1.2.2](https://github.com/CloudTooling/ansible-role-springboot/compare/v1.2.1...v1.2.2) (2025-05-07)
 
 
