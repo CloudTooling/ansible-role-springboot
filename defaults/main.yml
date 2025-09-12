@@ -28,3 +28,6 @@ extra_files: []
 
 # extra arguments to add to the service
 springboot_extra_args: ''
+
+# extra env variables to add to the service
+springboot_extra_envs: []
