@@ -25,3 +25,6 @@ springboot_group: javadev
 
 # extra files/directories to copy
 extra_files: []
+
+# extra arguments to add to the service
+springboot_extra_args: ''
