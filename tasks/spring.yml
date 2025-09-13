@@ -13,7 +13,7 @@
 - name: Create deploy folder if not exists
   file:
     path: "{{ springboot_deploy_folder }}"
-    mode: "0744"
+    mode: "0774"
     state: directory
     owner: "{{ springboot_user }}"
     group: "{{ springboot_group }}"
