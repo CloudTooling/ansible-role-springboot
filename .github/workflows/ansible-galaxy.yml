@@ -14,4 +14,4 @@ jobs:
           curl -X POST "https://galaxy.ansible.com/api/v1/imports/" \
             -H "Authorization: Token ${{ secrets.ANSIBLE_GALAXY_API_TOKEN }}" \
             -H "Content-Type: application/json" \
-            -d "{\"repository\": \"cloudtooling/ansible-role-springboot\"}"
+            -d "{\"repository\": \"https://github.com/cloudtooling/ansible-role-springboot\"}"
