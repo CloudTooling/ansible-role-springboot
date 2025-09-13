@@ -1,3 +1,17 @@
+## [1.3.1](https://github.com/CloudTooling/ansible-role-springboot/compare/v1.3.0...v1.3.1) (2025-09-13)
+
+
+### Bug Fixes
+
+* **Deployment:** Correcting folder permissions ([17b6e0a](https://github.com/CloudTooling/ansible-role-springboot/commit/17b6e0a6d597a98a1bf2fa5cd6e24f45108ac871))
+
+
+### Features
+
+* **Deployment:** Automate release to galaxy ([1e03de2](https://github.com/CloudTooling/ansible-role-springboot/commit/1e03de25e62f04a47025b8f58a52bd69c4fad21c))
+
+
+
 # [1.3.0](https://github.com/CloudTooling/ansible-role-springboot/compare/v1.2.2...v1.3.0) (2025-09-12)
 
 
