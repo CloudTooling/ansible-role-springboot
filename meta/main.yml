@@ -57,4 +57,5 @@ galaxy_info:
     - web
     - springboot
 
-dependencies: []
+dependencies:
+    - "community.general": ">=10.0.0"
