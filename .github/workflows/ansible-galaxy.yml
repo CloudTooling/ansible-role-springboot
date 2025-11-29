@@ -15,4 +15,4 @@ jobs:
         env:
           GALAXY_API_TOKEN: ${{ secrets.ANSIBLE_GALAXY_API_TOKEN }}
         run: |
-          ansible-galaxy role import cloudtooling ansible-role-springboot --token ${ANSIBLE_GALAXY_API_TOKEN}
+          ansible-galaxy role import cloudtooling ansible-role-springboot --token ${GALAXY_API_TOKEN}
