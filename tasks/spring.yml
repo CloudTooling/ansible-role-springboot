@@ -18,6 +18,13 @@
     owner: "{{ springboot_user }}"
     group: "{{ springboot_group }}"
 
+- name: Clean up deployment folder before
+  ansible.builtin.file:
+    state: absent
+    path: "{{ item }}"
+  with_items:
+    - '{{ springboot_clean_up_dirs }}'
+
 - name: Copy dist archive
   unarchive:
     src: "{{ springboot_dist_file }}"
@@ -26,13 +33,6 @@
     group: "{{ springboot_group }}"
   notify:
     - Restart application
-
-- name: Clean up deployment folder before
-  ansible.builtin.file:
-    state: absent
-    path: "{{ item }}"
-  with_items:
-    - '{{ springboot_clean_up_dirs }}'
 
 - name: Copy extra files
   ansible.builtin.copy:
