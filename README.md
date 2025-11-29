@@ -66,6 +66,8 @@ Within your CI/CD pipeline just run the playbook then, e.g. via GH action:
 For more advanced setup, you can add extra files via:
 ```
   vars:
+    springboot_clean_up_dirs:
+      - <extra files to clean before deployment>
     extra_files:
       - ../src/main/resources/config
       - ../src/main/resources/idp
