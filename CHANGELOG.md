@@ -1,3 +1,12 @@
+## [1.4.1](https://github.com/CloudTooling/ansible-role-springboot/compare/v1.4.0...v1.4.1) (2025-11-29)
+
+
+### Bug Fixes
+
+* **Release:** Drop dependencies ([4c1feae](https://github.com/CloudTooling/ansible-role-springboot/commit/4c1feae4387f83931ecad220c2f11fb60a31f1f9))
+
+
+
 # [1.4.0](https://github.com/CloudTooling/ansible-role-springboot/compare/v1.3.1...v1.4.0) (2025-11-29)
 
 
