@@ -57,5 +57,4 @@ galaxy_info:
     - web
     - springboot
 
-dependencies:
-  - community.general
+dependencies: []
