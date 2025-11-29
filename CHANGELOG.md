@@ -1,3 +1,12 @@
+## [1.4.2](https://github.com/CloudTooling/ansible-role-springboot/compare/v1.4.1...v1.4.2) (2025-11-29)
+
+
+### Bug Fixes
+
+* Correcting order for deployment cleanup ([d085fff](https://github.com/CloudTooling/ansible-role-springboot/commit/d085fff08ee6a7deda3b4ff86447f530295deaf1))
+
+
+
 ## [1.4.1](https://github.com/CloudTooling/ansible-role-springboot/compare/v1.4.0...v1.4.1) (2025-11-29)
 
 
