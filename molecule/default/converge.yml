@@ -4,7 +4,11 @@
   become: true
 
   vars:
-    springboot_dist_file: ../../example/files/spring-petclinic.jar
+    server_port: 8080
+    springboot_application_url: http://localhost:8080
+    springboot_application_name: my-app
+    springboot_dist_file: example/files/spring-petclinic.zip
+    springboot_configuration_template: example/files/application.yml.j2
 
   pre_tasks:
     - name: Update apt cache
@@ -29,4 +33,4 @@
       when: ansible_os_family == 'Debian'
 
   roles:
-    - ../..
+    - CloudTooling.springboot

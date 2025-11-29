@@ -1,4 +1,9 @@
 ---
+- name: Install needed tools
+  package:
+    name:
+      - unzip
+    state: present
 - name: Install app
   include_tasks: spring.yml
 
