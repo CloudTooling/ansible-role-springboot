@@ -1,3 +1,17 @@
+# [1.4.0](https://github.com/CloudTooling/ansible-role-springboot/compare/v1.3.1...v1.4.0) (2025-11-29)
+
+
+### Bug Fixes
+
+* Correcting dependencies ([c6a25a7](https://github.com/CloudTooling/ansible-role-springboot/commit/c6a25a71959e20741576762f756ef12c440937bd))
+
+
+### Features
+
+* **Deployment:** Clean before deployments ([035e9f1](https://github.com/CloudTooling/ansible-role-springboot/commit/035e9f1e9566c9b7e592d21fab4f3bf240c73109)), closes [#OSS-55](https://github.com/CloudTooling/ansible-role-springboot/issues/OSS-55)
+
+
+
 ## [1.3.1](https://github.com/CloudTooling/ansible-role-springboot/compare/v1.3.0...v1.3.1) (2025-09-13)
 
 
