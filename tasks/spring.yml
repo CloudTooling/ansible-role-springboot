@@ -10,13 +10,14 @@
     group: "{{ springboot_group }}"
     state: present
 
+# noqa: ignore-errors
 - name: Clean up deployment folder before
   ansible.builtin.file:
     state: absent
     path: "{{ item }}"
   with_items:
     - '{{ springboot_clean_up_dirs }}'
-  allow_failure: yes
+  ignore_errors: true
 
 - name: Create deploy folder if not exists
   file:
