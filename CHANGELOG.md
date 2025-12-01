@@ -1,3 +1,14 @@
+## [1.4.3](https://github.com/CloudTooling/ansible-role-springboot/compare/v1.4.2...v1.4.3) (2025-12-01)
+
+
+### Bug Fixes
+
+* **Deploy:** Use correct order for clean-up ([fd63000](https://github.com/CloudTooling/ansible-role-springboot/commit/fd630003ad11c4da27741ec7502281f56acdf63f)), closes [#18](https://github.com/CloudTooling/ansible-role-springboot/issues/18)
+* **Relase:** Adding validation via ansible lint ([1c93066](https://github.com/CloudTooling/ansible-role-springboot/commit/1c9306640ae542a9977aa729ede14261a71a08c0)), closes [#22](https://github.com/CloudTooling/ansible-role-springboot/issues/22)
+* **Release:** Auto-Release on Ansible galaxay ([a340913](https://github.com/CloudTooling/ansible-role-springboot/commit/a340913fae422f49c94f7a4ef8bb2ace9c1a14db))
+
+
+
 ## [1.4.2](https://github.com/CloudTooling/ansible-role-springboot/compare/v1.4.1...v1.4.2) (2025-11-29)
 
 
