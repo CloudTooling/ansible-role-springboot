@@ -1,3 +1,12 @@
+## [1.4.4](https://github.com/CloudTooling/ansible-role-springboot/compare/v1.4.3...v1.4.4) (2025-12-01)
+
+
+### Bug Fixes
+
+* **Dependency:** Delete role dependency ([f77f906](https://github.com/CloudTooling/ansible-role-springboot/commit/f77f9067a3941e1eb53a3430151183f0c61b9fd6)), closes [#24](https://github.com/CloudTooling/ansible-role-springboot/issues/24)
+
+
+
 ## [1.4.3](https://github.com/CloudTooling/ansible-role-springboot/compare/v1.4.2...v1.4.3) (2025-12-01)
 
 
