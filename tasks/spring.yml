@@ -10,6 +10,14 @@
     group: "{{ springboot_group }}"
     state: present
 
+- name: Clean up deployment folder before
+  ansible.builtin.file:
+    state: absent
+    path: "{{ item }}"
+  with_items:
+    - '{{ springboot_clean_up_dirs }}'
+  allow_failure: yes
+
 - name: Create deploy folder if not exists
   file:
     path: "{{ springboot_deploy_folder }}"
@@ -17,13 +25,6 @@
     state: directory
     owner: "{{ springboot_user }}"
     group: "{{ springboot_group }}"
-
-- name: Clean up deployment folder before
-  ansible.builtin.file:
-    state: absent
-    path: "{{ item }}"
-  with_items:
-    - '{{ springboot_clean_up_dirs }}'
 
 - name: Copy dist archive
   unarchive:
