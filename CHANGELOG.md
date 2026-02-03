@@ -1,3 +1,12 @@
+## [1.4.5](https://github.com/CloudTooling/ansible-role-springboot/compare/v1.4.4...v1.4.5) (2026-02-03)
+
+
+### Bug Fixes
+
+* **Deploy:** Allow 403 as response code ([3edf821](https://github.com/CloudTooling/ansible-role-springboot/commit/3edf8215608f21e61cbff6c641f4a15d9f918fbc))
+
+
+
 ## [1.4.4](https://github.com/CloudTooling/ansible-role-springboot/compare/v1.4.3...v1.4.4) (2025-12-01)
 
 
