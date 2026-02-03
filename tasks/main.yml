@@ -13,7 +13,8 @@
     status_code:
       - 200
       - 401
-  until: uri_output.status == 200 or uri_output.status == 401
+      - 403
+  until: uri_output.status == 200 or uri_output.status == 401 or uri_output.status == 403
   # Retries for 24 * 5 seconds = 120 seconds = 2 minutes
   retries: 24
   # Every 5 seconds
