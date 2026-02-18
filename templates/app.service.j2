@@ -1,6 +1,6 @@
 [Unit]
 Description={{ springboot_application_name }}
-After=syslog.target
+After=syslog.target network.target
 
 [Service]
 WorkingDirectory={{ springboot_deploy_folder }}
