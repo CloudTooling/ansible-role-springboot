@@ -3,8 +3,9 @@ Description={{ springboot_application_name }}
 After=syslog.target
 
 [Service]
+WorkingDirectory={{ springboot_deploy_folder }}
 User={{ springboot_user }}
-ExecStart="{{ springboot_deploy_folder }}/{{ springboot_application_jar }} {{ springboot_extra_args}}"
+ExecStart=/usr/bin/java -jar {{ springboot_deploy_folder }}/{{ springboot_application_jar }} {{ springboot_extra_args}}
 Environment=SPRING_CONFIG_LOCATION={{ springboot_deploy_folder }}/application.yml
 {% for env in springboot_extra_envs %}
 {% for k, v in env.items() %}
