@@ -20,4 +20,5 @@
 - name: Restart service
   ansible.builtin.service:
     name: "{{ springboot_application_name }}"
+    daemon-reload: true
     state: restarted
