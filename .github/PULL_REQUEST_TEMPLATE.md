@@ -15,9 +15,9 @@
 - [ ] This change requires a documentation update
 
 ### :scroll: Example code
-```js
+```yaml
 
-``` 
+```
 
 ## :vertical_traffic_light: How Has This Been Tested?
 
