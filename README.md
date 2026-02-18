@@ -68,6 +68,12 @@ For more advanced setup, you can add extra files via:
   vars:
     springboot_clean_up_dirs:
       - <extra files to clean before deployment>
+    # passed to JVM as -D
+    springboot_jvm_params:
+      file.encoding: UTF-8
+    # Passed in systemd config
+    springboot_extra_envs:
+      - DB_PASSWORD: secret
     extra_files:
       - ../src/main/resources/config
       - ../src/main/resources/idp
