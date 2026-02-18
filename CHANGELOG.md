@@ -1,3 +1,31 @@
+# [2.0.0](https://github.com/CloudTooling/ansible-role-springboot/compare/v1.4.5...v2.0.0) (2026-02-18)
+
+
+### Bug Fixes
+
+* **SpringBoot:** Drop support for "fully executable" jars ([bb81650](https://github.com/CloudTooling/ansible-role-springboot/commit/bb81650f021d49683a445fdcb34cce21911fb745)), closes [#29](https://github.com/CloudTooling/ansible-role-springboot/issues/29)
+
+
+### Features
+
+* **SpringBoot:** pass JVM params directly in ExecStart for Spring Boot 4 compatibility ([ae812b5](https://github.com/CloudTooling/ansible-role-springboot/commit/ae812b559e9d45267f56ab9aa2a22464081d78ba)), closes [#29](https://github.com/CloudTooling/ansible-role-springboot/issues/29)
+
+
+### BREAKING CHANGES
+
+* **SpringBoot:** Spring Boot 4 removed the embedded launch script 
+wrapper
+that previously handled JAVA_OPTS and shell-style quoting in systemd 
+services.
+JVM -D parameters must now be passed directly to the java command.
+
+Introduces `springboot_jvm_params` map variable to define JVM -D 
+parameters.
+Remove any JAVA_OPTS usage from springboot_extra_envs and migrate to the 
+new variable.
+
+
+
 ## [1.4.5](https://github.com/CloudTooling/ansible-role-springboot/compare/v1.4.4...v1.4.5) (2026-02-03)
 
 
